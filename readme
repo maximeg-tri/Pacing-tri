@@ -1,0 +1,30 @@
+# Triathlon Pacing - Streamlit app
+
+Application Streamlit simple pour calculer des puissances cibles vélo et des allures de course en fonction d'un GPX.
+
+## Fichiers
+- `app.py` : application Streamlit (vélo, course, triathlon simple).
+- `requirements.txt` : dépendances Python.
+
+## Déploiement local
+1. Créer un environnement virtuel (optionnel) :
+   - `python -m venv venv`
+   - `source venv/bin/activate` (mac/linux) ou `venv\Scripts\activate` (Windows)
+2. Installer :
+   - `pip install -r requirements.txt`
+3. Lancer :
+   - `streamlit run app.py`
+
+## Déploiement sur Streamlit Cloud
+1. Créer un dépôt GitHub et pousser ces fichiers.
+2. Créer un compte sur https://streamlit.io/cloud et connecter GitHub.
+3. Dans Streamlit Cloud, cliquer "New app", choisir le repo & fichier `app.py`, puis `Deploy`.
+
+## Utilisation
+- Upload un (ou deux) fichiers GPX (vélo, puis CAP).
+- Ajuste paramètres (poids, CdA, FTP).
+- Télécharger CSV des segments.
+
+## Remarques
+- Modèles simplifiés : adapte CdA, poids, FTP à tes données réelles pour de meilleurs résultats.
+- Possibilité d'exporter en TCX/FIT via outils tiers pour l'import dans Garmin Connect (non inclus).
